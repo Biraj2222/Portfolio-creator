@@ -1,0 +1,152 @@
+/* assets/css/templates.css */
+/* Common Portfolio Styling */
+.pf-portfolio-body {
+    background-color: var(--pf-bg, #f8fafc);
+    color: var(--pf-text, #0f172a);
+    font-family: var(--pf-font, system-ui, sans-serif);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.pf-container {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.pf-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--pf-accent, #2563eb);
+}
+
+.pf-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--pf-accent, #2563eb);
+}
+
+.pf-name {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.25rem;
+    color: var(--pf-heading, #0f172a);
+}
+
+.pf-title {
+    font-size: 1.2rem;
+    color: var(--pf-accent, #2563eb);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.pf-contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    font-size: 0.95rem;
+    color: #64748b;
+}
+
+.pf-section {
+    margin-bottom: 3rem;
+}
+
+.pf-section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    color: var(--pf-heading, #0f172a);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pf-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.pf-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.pf-pill {
+    display: inline-block;
+    background: rgba(37, 99, 235, 0.1);
+    color: var(--pf-accent, #2563eb);
+    padding: 0.35rem 0.85rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin: 0.25rem;
+}
+
+/* TEMPLATE 1: MODERN */
+.tpl-modern .pf-header {
+    background: linear-gradient(135deg, var(--pf-accent, #2563eb), #0f172a);
+    color: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    border-bottom: none;
+}
+.tpl-modern .pf-name { color: #ffffff; }
+.tpl-modern .pf-title { color: #93c5fd; }
+.tpl-modern .pf-contact-list { color: #cbd5e1; }
+.tpl-modern .pf-avatar { border-color: #ffffff; }
+
+/* TEMPLATE 2: MINIMAL */
+.tpl-minimal {
+    --pf-bg: #ffffff;
+}
+.tpl-minimal .pf-header {
+    border-bottom: 1px solid #f1f5f9;
+}
+.tpl-minimal .pf-card {
+    border: none;
+    background: #f8fafc;
+}
+
+/* TEMPLATE 3: PROFESSIONAL */
+.tpl-professional .pf-header {
+    border-left: 6px solid var(--pf-accent, #2563eb);
+    padding-left: 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* TEMPLATE 4: CREATIVE */
+.tpl-creative .pf-header {
+    background: #f8fafc;
+    border: 2px dashed var(--pf-accent, #2563eb);
+    border-radius: 16px;
+    padding: 2.5rem;
+}
+.tpl-creative .pf-card {
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* TEMPLATE 5: CLASSIC */
+.tpl-classic {
+    --pf-bg: #fffbf0;
+}
+.tpl-classic .pf-header {
+    text-align: center;
+    flex-direction: column;
+    border-bottom: 2px double #cbd5e1;
+}
+.tpl-classic .pf-contact-list {
+    justify-content: center;
+}
+
